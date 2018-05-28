@@ -1,0 +1,28 @@
+import java.util.*;
+class IOPC
+{
+ public static void main(String[] ar)
+{
+ Scanner obj = new Scanner(System.in);
+ int n= obj.nextInt();
+ while(n-->0)
+ { 
+  int a =obj.nextInt();
+  int[] arr = new int[a];
+  ArrayList<Integer> a1 = new ArrayList<Integer>();
+  for(int i=0;i<a;i++)
+ {
+   int ar = obj.nextInt();
+  if(!a1.contains(ar))
+ {
+   a1.add(ar);
+ }
+ }
+ Collections.sort(a1);
+ int ans = a1.get(a1.length-2)%a1.get(a1.length-1);
+ System.out.println(ans);
+}}
+ 
+  
+  
+  
